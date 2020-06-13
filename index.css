@@ -16,6 +16,23 @@ h2 {
     line-height: 15.4px; 
 }
 
+h3 { 
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+    font-size: 14px; font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+
+p { 
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+} 
+
 html,
 body {
     position: fixed;
@@ -76,7 +93,7 @@ body {
 
 
 .card {
-    background: #FAF0E6; /*Linen*/
+    background: #FFF0F5; /*Linen*/
     margin-bottom: 2em;
     max-width: 100%;
 
