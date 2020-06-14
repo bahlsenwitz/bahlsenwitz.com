@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="image/favicon.png"/>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="flagship.css"/>
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
     <link rel="stylesheet" type="text/css" href="../index.css"/>
 
     <!-- MISC. -->
@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author"   content="S. Matthew English"/>
     <meta charset="utf-8"/>
+
+
 </head>
 
 <body>
@@ -34,30 +36,24 @@
     <div class="row content">
         <!-- 0:CONTENT -->
 
+<label for="email">Email:</label>  <!-- should be an image -->
+<input type="text" id="email" name="email" required minlength="4" maxlength="8" size="50" placeholder="Optional">
 
- <div class="container">
-  <form action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<label for="name">Subject:</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="50" placeholder="Optional">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+<form action = "/cgi-bin/hello_get.cgi" method = "get">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>  
+    <label for="description">Message:</label>
+ 
+    <textarea id="textarea" name="description" rows="5" cols="50">
+        It was a dark and stormy night...
+    </textarea>
+ 
+    <input type = "submit" value = "submit" />
+</form>
 
 
 
