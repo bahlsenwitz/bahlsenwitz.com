@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="image/favicon.png"/>
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="contact.css"/>
     <link rel="stylesheet" type="text/css" href="../index.css"/>
 
@@ -36,24 +37,23 @@
     <div class="row content">
         <!-- 0:CONTENT -->
 
-<label for="email">Email:</label>  <!-- should be an image -->
-<input type="text" id="email" name="email" required minlength="4" maxlength="8" size="50" placeholder="Optional">
+<i class="large material-icons">email</i>
+<input type="text" id="email" name="email" required minlength="4" maxlength="8" size="50" placeholder="Optional - Email"/>
+<br/>
 
+<i class="large material-icons">label</i>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="50" placeholder="Optional - Subject"/>
+<br/>
 
-<label for="name">Subject:</label>
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="50" placeholder="Optional">
+<i class="large material-icons">message</i>
+<textarea id="textarea" name="description" rows="5" cols="50">
+    Message...
+</textarea>
+<br/>
 
+<!-- <input type = "submit" value = "submit" /> -->
+<button type="submit" name="submit"><i class="large material-icons">send</i></button>
 
-<form action = "/cgi-bin/hello_get.cgi" method = "get">
-
-    <label for="description">Message:</label>
- 
-    <textarea id="textarea" name="description" rows="5" cols="50">
-        It was a dark and stormy night...
-    </textarea>
- 
-    <input type = "submit" value = "submit" />
-</form>
 
 
 
