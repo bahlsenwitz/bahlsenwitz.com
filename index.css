@@ -100,6 +100,16 @@ body {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer a:hover {
+    color: #777; /**/
 }
 
 
@@ -116,7 +126,7 @@ body {
 }
 
 .card a:hover {
-/*    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);*/
+    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
 }
 
 .card-content {
